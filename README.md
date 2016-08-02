@@ -8,7 +8,7 @@ Dynamic Data Visualization by Chart (D3)
 - Install MongoDB
 - Start MongoDB(MongoD)
 - make directory c:\data\db
-- mongoimport -d datavisualization -c projects --type csv --headerline --file C:\data\db\sampledata.csv
+- mongoimport -d datavisualization -c projects --type csv --headerline --file C:\data\db\sampledata.csv (File Path)
 
 - npm install
 
