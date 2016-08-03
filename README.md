@@ -10,7 +10,7 @@ Dynamic Data Visualization by Chart (D3)
 - make directory c:\data\db
 - mongoimport -d datavisualization -c projects --type csv --headerline --file C:\data\db\sampledata.csv (File Path)
 
-- npm install
+- npm install (ES6 + Webpack)
 
 - npm start 
 
