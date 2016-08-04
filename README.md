@@ -11,7 +11,7 @@ Dynamic Data Visualization by Chart (D3)
 - mongoimport -d datavisualization -c projects --type csv --headerline --file C:\data\db\sampledata.csv (File Path)
 
 - npm install (ES6 + Webpack)
-
+- npm test (Mocha + Chai)
 - npm start 
 
 and you can see
