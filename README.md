@@ -6,7 +6,7 @@ Dynamic Data Visualization by Chart (D3)
 - System Stack is (MEAN + DC + D3 + React)
 
 - Install MongoDB
-- Start MongoDB(MongoD)
+- Start MongoDB(execute : MongoD)
 - make directory c:\data\db
 - mongoimport -d datavisualization -c projects --type csv --headerline --file C:\data\db\sampledata.csv (File Path)
 
