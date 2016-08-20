@@ -16,4 +16,4 @@ Dynamic Data Visualization by Chart (D3)
 
 and you can see
 
-- http://localhost:8080/index.html
+- http://localhost:8080/
