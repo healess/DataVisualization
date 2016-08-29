@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient
 var mongo  = require('mongodb')
 var url = 'mongodb://localhost:27017/test';
-
+var http = require('http');
   // Connection URL
   // Use connect method to connect to the Server
 module.exports.callDb =  function(res) {
@@ -22,14 +22,20 @@ module.exports.callDb =  function(res) {
             }
             console.log("document find:");
             console.log(doc.title);
+              //      res.send(doc);
+
         });
+
       /*
         myCollection.insert({"title" : "First data5", "user" : "king5" }, function(err, result) {
         if(err)
             throw err;
         console.log("entry saved");
       });*/
+
+
       db.close();
     });
+
 };
 
