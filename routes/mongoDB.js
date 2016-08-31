@@ -8,9 +8,10 @@ router.get('/list', function(req, res, next) {
 		res.send(doc);
 	});
 });
-router.get('/get', function(req, res, next) {
+router.get('/get/user/:user', function(req, res, next) {
 	db = req.db;
-	var user = req.query.user
+	var user = req.params.user
+    console.log('rest api : '+ user);
 	db.get('test').findOne({'user':user},function(err,doc){
 		if(err) console.log('err');
 		res.send(doc);
@@ -53,7 +54,6 @@ router.post('/update', function(req, res, next) {
 	var city = req.body.city;
 	db = req.db;
 	db.get('test').update({userid:userid},{'userid':userid,'sex':sex,'city':city},function(err,doc){
-	//db.get('users').update({'userid':userid},{$set:{'sex':'BUSAN'}},function(err,doc){
 	       if(err){
 	    	   console.log(err);
 	    	   res.status(500).send('update error');
