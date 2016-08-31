@@ -8,6 +8,7 @@ router.get('/list', function(req, res, next) {
 		res.send(doc);
 	});
 });
+
 router.get('/get/user/:user', function(req, res, next) {
 	db = req.db;
 	var user = req.params.user

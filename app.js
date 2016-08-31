@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+/* start connect mongDB */
 var monk = require('monk');
 var db = monk('mongodb://localhost:27017/test');
 var mongo = require('./routes/mongoDB.js');
@@ -30,7 +31,7 @@ app.use(function(req,res,next){
     next();
 });
 app.use('/db', mongo);
-
+/* end connect mongDB */
 
 app.use('/', routes);
 app.use('/users', users);
