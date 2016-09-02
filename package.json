@@ -2,7 +2,11 @@
   "name": "DataVisualization",
   "version": "0.0.1",
   "description": "Project which has a function of data visualization with node js framework",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/healess/DataVisualization.git"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "node ./build/Datavisualization.js"
   },
@@ -15,5 +19,11 @@
     "monk": "^3.1.2",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "webpack": "^1.13.2"
   }
 }

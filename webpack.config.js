@@ -18,13 +18,19 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: 'Datavisualization.js'
   },  
+   module: {
+    loaders: [
+        {
+          test: /\.js$/,
+          loader: 'babel',
+          exclude: /(node_modules)/,
+          query: {
+            presets: ['es2015']
+          }
+        }
+    ]
+  },
   externals: nodeModules,
-  plugins: [
-    new webpack.IgnorePlugin(/\.(css|less)$/),
-    new webpack.BannerPlugin('require("source-map-support").install();',
-                             { raw: true, entryOnly: false })
-  ],
-  devtool: 'sourcemap',
   node: {
   __dirname: true
   }

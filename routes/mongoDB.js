@@ -1,5 +1,8 @@
-var express = require('express');
 var router = express.Router();
+import express from 'express';
+var monk = require('monk');
+
+let db = monk('mongodb://localhost:27017/test');
 
 router.get('/list', function(req, res, next) {
 	db = req.db;
