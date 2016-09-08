@@ -3,7 +3,7 @@ Dynamic Data Visualization by Chart (D3)
 
 - data visualization (DC+Crossfilter)
 
-- System Stack is (MEAN + DC + D3 + React) 
+- System Stack is (MEAN + DC + D3 + React and rest api) 
 - Database middleware is used monk(MongoDB).
 
 - Install MongoDB
